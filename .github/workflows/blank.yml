@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Log a debug message
+        run: >-
+          echo "::debug::IN DEBUG MODE"
       - name: Log debug context
         run: |
           echo 'RUNNER_DEBUG='"${RUNNER_DEBUG}"
